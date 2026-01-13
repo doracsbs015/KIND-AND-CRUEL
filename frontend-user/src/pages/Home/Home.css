@@ -1,0 +1,30 @@
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b3b2b;
+  min-height: 100vh;
+
+  /* background image */
+  background-image: url("/kncimg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* optional soft overlay so text stays readable */
+.home-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(249, 245, 240, 0.85);
+  z-index: -1;
+}
+
+.home-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(243, 235, 224, 0.9);
+  color: #5c4a3c;
+  margin-top: 2rem;
+  border-top: 1px solid #e0d4c8;
+}

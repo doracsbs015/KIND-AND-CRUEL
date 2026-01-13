@@ -1,0 +1,137 @@
+.feedback-form {
+  background: #fff6e5; /* pastel yellow */
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box; /* ensure padding counts inside width */
+}
+
+.feedback-form h3 {
+  text-align: center;
+  color: #5a4328;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.feedback-note {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #7a5c3d;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e3cfa3;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #4b3b2b;
+  background-color: #fffaf1;
+  box-sizing: border-box; /* prevent overflow */
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: #a38a6d;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #d6a77a;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #f5f587;
+  color: #4b3b2b;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.feedback-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .feedback-form {
+    padding: 1rem 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .feedback-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .feedback-note {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    font-size: 0.9rem;
+    padding: 0.65rem 0.9rem;
+  }
+
+  .feedback-form button {
+    font-size: 0.95rem;
+    padding: 0.55rem 0.9rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .feedback-form {
+    max-width: 95%;      /* don’t let it take full width */
+    padding: 1.5rem;     /* add more space inside */
+    margin: 1.5rem auto; /* vertical spacing + center horizontally */
+    box-sizing: border-box;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .feedback-form {
+    max-width: 90%;      /* more visible background */
+    padding: 1rem;       /* comfortable spacing inside */
+    margin: 1rem auto;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form button {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+}
